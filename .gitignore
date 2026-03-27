@@ -3,3 +3,12 @@ __pycache__/
 *.pyc
 models/*.pkl
 .dvc/cache
+
+# raw and processed data — managed by DVC, not git
+WA_Fn-UseC_-Telco-Customer-Churn.csv
+data/raw/telco_v2.csv
+data/raw/telco_v3.csv
+data/processed/
+
+# MLflow
+mlflow.db

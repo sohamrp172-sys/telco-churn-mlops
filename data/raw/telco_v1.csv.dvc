@@ -1,0 +1,5 @@
+outs:
+- md5: 2ceb4ce623570aba77c41d487854d861
+  size: 321134
+  hash: md5
+  path: telco_v1.csv
