@@ -2,14 +2,14 @@
   
 # 🚀 Telco Customer Churn Prediction - End-to-End MLOps
 
-[![CI/CD Pipeline](https://github.com/Soham/churn-project/actions/workflows/ci.yml/badge.svg)](https://github.com/Soham/churn-project/actions)
+[![CI/CD Pipeline](https://github.com/sohamrp172-sys/telco-churn-mlops/actions/workflows/ci.yml/badge.svg)](https://github.com/sohamrp172-sys/telco-churn-mlops/actions)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104.1-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com/)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.3.2-F7931E.svg?logo=scikit-learn)](https://scikit-learn.org/)
 
 An industry-grade Machine Learning Operations (MLOps) pipeline that predicts whether a telecommunications customer will stop using their service (churn), featuring a highly interactive presentation dashboard and automated deployments.
 
-[Report Bug](https://github.com/Soham/churn-project/issues) · [Request Feature](https://github.com/Soham/churn-project/issues)
+[Report Bug](https://github.com/sohamrp172-sys/telco-churn-mlops/issues) · [Request Feature](https://github.com/sohamrp172-sys/telco-churn-mlops/issues)
 
 ---
 
@@ -87,7 +87,7 @@ Follow these steps to run the exact environment on your own computer:
 
 **1. Clone the repository:**
 ```bash
-git clone https://github.com/Soham/churn-project.git
+git clone https://github.com/sohamrp172-sys/telco-churn-mlops.git
 cd telco-churn-mlops
 ```
 
@@ -125,7 +125,7 @@ When telemetry is entered, the engine executes inference in real-time to alert a
 
 ## ✒️ Author Information
 **Soham** - Student & Aspiring ML Engineer
-- **GitHub:** [@Soham](https://github.com/Soham)
+- **GitHub:** [@sohamrp172-sys](https://github.com/sohamrp172-sys)
 
 ---
 *This repository was built for academic evaluation, showcasing a complete end-to-end understanding of Machine Learning and MLOps practices.*
