@@ -113,7 +113,7 @@ Visit `http://localhost:8000` in your web browser!
 ## 🖼 Dashboard Screenshots
 
 ### Overview & Prediction UI
-![Dashboard Overview](frontend/dashboard.png) *(Note: Please add a screenshot image here!)*
+![Dashboard Overview](frontend/dashboard.png) 
 
 When telemetry is entered, the engine executes inference in real-time to alert admins of churn risks.
 
