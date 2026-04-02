@@ -2,7 +2,6 @@
   
 # 🚀 Telco Customer Churn Prediction - End-to-End MLOps
 
-[![CI/CD Pipeline](https://github.com/Soham/churn-project/actions/workflows/ci.yml/badge.svg)](https://github.com/Soham/churn-project/actions)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/release/python-3110/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104.1-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com/)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.3.2-F7931E.svg?logo=scikit-learn)](https://scikit-learn.org/)
