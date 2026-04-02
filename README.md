@@ -125,7 +125,7 @@ When telemetry is entered, the engine executes inference in real-time to alert a
 
 ## ✒️ Author Information
 **Soham** - Student & Aspiring ML Engineer
-- **GitHub:** [@Soham](https://github.com/Soham)
+- **GitHub:** [@Soham](https://github.com/sohamrp172-sys)
 
 ---
 *This repository was built for academic evaluation, showcasing a complete end-to-end understanding of Machine Learning and MLOps practices.*
