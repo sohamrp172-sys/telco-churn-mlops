@@ -14,7 +14,7 @@ An industry-grade Machine Learning Operations (MLOps) pipeline that predicts whe
 ---
 
 ### 🌐 LOCAL APPLICATION
-**[👉 Click here to open the Interactive Dashboard](http://localhost:8000)** *(Note: Ensure you have followed the 'Installation & Running Locally' instructions below and that your Uvicorn server is actively running!)*
+**[👉 Click here to open the Interactive Dashboard](http://localhost:8000)**
 
 </div>
 
