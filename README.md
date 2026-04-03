@@ -91,23 +91,31 @@ git clone https://github.com/sohamrp172-sys/telco-churn-mlops.git
 cd telco-churn-mlops
 ```
 
-**2. Install dependencies:**
+**2. One-Click Deploy (Windows) — Recommended! 🚀**
+```bash
+deploy.bat
+```
+This single script automatically installs all dependencies, generates the dataset, trains the model, and starts the server!
+
+**Or run manually step by step:**
+
+**3. Install dependencies:**
 ```bash
 pip install -r requirements.txt
 ```
 
-**3. Run the ML Pipeline (Generates Model!):**
+**4. Generate dataset & Run the ML Pipeline:**
 ```bash
-# This recreates the churn_model.pkl file using your raw data
-dvc repro
+python generate_data.py
+python src\preprocess.py --input data\raw\telco_v1.csv --output data\processed\telco_processed.csv
+python src\train.py --input data\processed\telco_processed.csv --model-type lr --run-name v1-logistic
 ```
-*(If you do not have DVC configured, run `python generate_dummy.py` instead to create a fast presentation model)*
 
-**4. Start the Application Server:**
+**5. Start the Application Server:**
 ```bash
-uvicorn api.main:app --reload
+python -m uvicorn api.main:app --reload
 ```
-**5. Open Dashboard:**
+**6. Open Dashboard:**
 Visit `http://localhost:8000` in your web browser!
 
 ## 🖼 Dashboard Screenshots
