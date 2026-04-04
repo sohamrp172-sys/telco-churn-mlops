@@ -17,7 +17,7 @@ app.add_middleware(
 )
 
 
-MODEL_PATH = "models/churn_model.pkl"
+MODEL_PATH = "models/test_model_v1.pkl"
 model = None
 expected_features = []
 
