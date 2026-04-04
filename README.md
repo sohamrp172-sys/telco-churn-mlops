@@ -16,8 +16,7 @@ An industry-grade Machine Learning Operations (MLOps) pipeline that predicts whe
 ### 🌐 LIVE CLOUD APPLICATION (Render)
 **[👉 Click here to open the Live Dashboard](https://telco-churn-mlops-9av4.onrender.com)**
 
-### 🖥️ LOCAL APPLICATION
-**[👉 Click here to run locally at localhost:8000](http://localhost:8000)**
+
 
 </div>
 
