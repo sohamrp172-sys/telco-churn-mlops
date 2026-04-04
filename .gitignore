@@ -2,7 +2,7 @@ mlruns/
 __pycache__/
 *.pyc
 models/*.pkl
-!models/test_model_v1.pkl
+!models/churn_model.pkl
 .dvc/cache
 
 # raw and processed data — managed by DVC, not git

@@ -6,7 +6,7 @@ echo ============================================================
 echo.
 
 :: Stage the model file explicitly
-git add -f models\test_model_v1.pkl
+git add -f models\churn_model.pkl
 git add .gitignore
 git add api\main.py
 
