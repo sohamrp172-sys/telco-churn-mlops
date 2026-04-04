@@ -8,7 +8,7 @@ stages:
       - data/processed/telco_processed.csv
 
   train:
-    cmd: python src/train.py --input data/processed/telco_processed.csv --model-type lr --run-name v1-logistic
+    cmd: python src/train.py --input data/processed/telco_processed.csv --model-type gb --run-name v4-gb-deterministic
     deps:
       - src/train.py
       - data/processed/telco_processed.csv

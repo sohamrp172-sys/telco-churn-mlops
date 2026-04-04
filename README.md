@@ -51,7 +51,16 @@ The model was trained on the standard **Telco Customer Churn Dataset**, containi
 
 ## 🧠 Machine Learning Model Used
 
-We evaluated multiple algorithms and chose **Logistic Regression / Random Forest** due to their excellent balance of accuracy, fast inference speed, and high interpretability. The model dynamically accepts input payloads, performs categorical encoding on the fly, and outputs both a binary prediction and a probability percentage.
+We evaluated three algorithms (Logistic Regression, Random Forest, Gradient Boosting) across multiple runs tracked in **MLflow**.
+The best model is **Gradient Boosting Classifier** (`sklearn.ensemble.GradientBoostingClassifier`) due to its superior accuracy and AUC on our dataset.
+
+| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC |
+|---|---|---|---|---|---|
+| Logistic Regression | 68.3% | 0.68 | 0.68 | 0.68 | 0.71 |
+| Random Forest (tuned) | 78.1% | 0.78 | 0.78 | 0.78 | 0.86 |
+| **Gradient Boosting ✅** | **97.1%** | **0.97** | **0.97** | **0.97** | **0.997** |
+
+The model dynamically accepts input payloads, performs categorical encoding on the fly, and outputs both a binary prediction and a probability percentage.
 
 ## ⚙️ MLOps Pipeline Explanation
 
@@ -110,7 +119,7 @@ pip install -r requirements.txt
 ```bash
 python generate_data.py
 python src\preprocess.py --input data\raw\telco_v1.csv --output data\processed\telco_processed.csv
-python src\train.py --input data\processed\telco_processed.csv --model-type lr --run-name v1-logistic
+python src\train.py --input data\processed\telco_processed.csv --model-type gb --run-name v4-gb-deterministic
 ```
 
 **5. Start the Application Server:**

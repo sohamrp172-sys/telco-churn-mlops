@@ -60,7 +60,7 @@ echo [OK] Data preprocessed and saved!
 echo.
 echo [STEP 4/5] Training the Machine Learning model...
 echo.
-python src\train.py --input data\processed\telco_processed.csv --model-type lr --run-name v1-logistic
+python src\train.py --input data\processed\telco_processed.csv --model-type gb --run-name v4-gb-deterministic
 if %errorlevel% neq 0 (
     echo.
     echo   ERROR: Training failed! Check the error above.
