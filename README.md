@@ -154,7 +154,7 @@ When telemetry is entered, the engine executes inference in real-time to alert a
 - Add SHAP values to the dashboard to show the user exactly *why* the model made its decision.
 
 ## ✒️ Author Information
-**Soham** - Student & Aspiring ML Engineer
+**Soham** - Student
 - **GitHub:** [@sohamrp172-sys](https://github.com/sohamrp172-sys)
 
 ---
