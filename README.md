@@ -118,6 +118,17 @@ python -m uvicorn api.main:app --reload
 **6. Open Dashboard:**
 Visit `http://localhost:8000` in your web browser!
 
+## ☁️ Deploying to Render
+
+This repository is fully configured for a 1-click automated deployment to [Render](https://render.com/).
+
+1. Create an account on Render.com and login.
+2. Click **New > Web Service**.
+3. Connect your GitHub account and select the `telco-churn-mlops` repository.
+4. Render will automatically detect the `render.yaml` configuration.
+5. Click **Deploy Web Service** — Render will handle installing dependencies and starting the FastAPI server.
+
+
 ## 🖼 Dashboard Screenshots
 
 ### Overview & Prediction UI
