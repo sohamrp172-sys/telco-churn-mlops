@@ -20,6 +20,7 @@ git add requirements.txt
 git add deploy.bat
 git add generate_data.py
 git add .gitignore
+git add -f models\churn_model.pkl
 git add src\
 git add api\
 git add frontend\
@@ -34,14 +35,7 @@ echo.
 
 :: Commit with a nice message
 echo [4/4] Committing and pushing to GitHub...
-git commit -m "feat: add deploy script, data generator & fix dependencies
-
-- Added deploy.bat: one-click deployment script
-- Added generate_data.py: auto-generates 2000-row realistic telco dataset  
-- Fixed requirements.txt: pinned versions to fix numpy/pandas incompatibility
-- Updated .gitignore: exclude raw data and model files properly
-- Using python -m uvicorn for reliable server startup on Windows"
-
+git commit -m "feat: final push to deploy real ML model to Render"
 echo.
 echo Pushing to GitHub...
 git push origin main
