@@ -150,7 +150,7 @@ When telemetry is entered, the engine executes inference in real-time to alert a
 ## 🚀 Future Improvements
 
 - Switch to asynchronous inference for handling massive traffic.
-- Implement XGBoost or LightGBM for potentially higher accuracy.
+- Implement LightGBM for potentially higher accuracy.
 - Add SHAP values to the dashboard to show the user exactly *why* the model made its decision.
 
 ## ✒️ Author Information
