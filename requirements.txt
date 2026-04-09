@@ -1,6 +1,7 @@
-pandas
-scikit-learn
-mlflow
+pandas==2.3.3
+numpy==1.26.4
+scikit-learn==1.8.0
+mlflow==3.11.1
 dvc
 fastapi
 uvicorn
