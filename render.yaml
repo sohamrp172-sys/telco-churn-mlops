@@ -4,10 +4,9 @@ services:
     env: python
     buildCommand: |
       pip install -r requirements.txt
-      rm -f models/churn_model.pkl
       python src/preprocess.py --input data/raw/telco_v1.csv --output data/processed/telco_processed.csv
       python src/train.py --input data/processed/telco_processed.csv --model-type gb --run-name render-deploy
-      ls -lh models/churn_model.pkl
+      ls -lh models/churn_model_render.pkl
       echo "✓ Model trained successfully on Render"
     startCommand: "uvicorn api.main:app --host 0.0.0.0 --port $PORT"
     envVars:
