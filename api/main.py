@@ -49,12 +49,17 @@ class CustomerData(BaseModel):
 def load_model():
     global model, expected_features
     print(f"Attempting to load model from: {MODEL_PATH}")
+    print(f"Model path absolute: {MODEL_PATH.absolute()}")
+    print(f"Model path exists: {MODEL_PATH.exists()}")
+    print(f"Current working directory: {os.getcwd()}")
+    
     if MODEL_PATH.exists():
         print(f"✓ Model file found at {MODEL_PATH}")
         model = joblib.load(MODEL_PATH)
         if hasattr(model, "feature_names_in_"):
             expected_features = list(model.feature_names_in_)
             print(f"✓ Model loaded successfully with {len(expected_features)} features")
+            print(f"✓ Using REAL trained model (not dummy)")
         else:
             print("Warning: Model does not have `feature_names_in_` attribute.")
     else:
@@ -125,7 +130,17 @@ def predict_churn(data: CustomerData):
 
 @app.get("/health")
 def health() -> dict:
-    return {"status": "healthy", "model_loaded": model is not None}
+    model_type = "real_trained_model" if model and not isinstance(model, type(model).__name__) == "DummyPresentationModel" else "dummy_model"
+    model_info = {
+        "status": "healthy",
+        "model_loaded": model is not None,
+        "model_type": type(model).__name__ if model else None,
+        "is_dummy": "Dummy" in type(model).__name__ if model else False,
+        "feature_count": len(expected_features) if expected_features else 0,
+        "model_path": str(MODEL_PATH),
+        "model_exists": MODEL_PATH.exists()
+    }
+    return model_info
 
 app.mount("/", StaticFiles(directory="frontend", html=True), name="frontend")
 
