@@ -1,0 +1,23 @@
+stages:
+  preprocess:
+    cmd: python src/preprocess.py --input data/raw/telco_v1.csv --output data/processed/telco_processed.csv
+    deps:
+      - src/preprocess.py
+      - data/raw/telco_v1.csv
+    outs:
+      - data/processed/telco_processed.csv
+
+  train:
+    cmd: python src/train.py --input data/processed/telco_processed.csv --model-type gb --run-name v4-gb-deterministic
+    deps:
+      - src/train.py
+      - data/processed/telco_processed.csv
+    outs:
+      - models/churn_model.pkl
+
+  evaluate:
+    cmd: python src/evaluate.py --model-path models/churn_model.pkl --input data/processed/telco_processed.csv
+    deps:
+      - src/evaluate.py
+      - models/churn_model.pkl
+      - data/processed/telco_processed.csv
