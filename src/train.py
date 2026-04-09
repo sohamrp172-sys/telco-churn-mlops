@@ -8,7 +8,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, roc_auc_score
 from sklearn.model_selection import GridSearchCV, train_test_split
 
-MODEL_PATH = "models/churn_model_render.pkl"
+MODEL_PATH = "/tmp/churn_model.pkl"
 EXPERIMENT_NAME = "churn-prediction"
 
 

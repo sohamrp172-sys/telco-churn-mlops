@@ -20,7 +20,7 @@ app.add_middleware(
 
 # Get absolute path to model file
 BASE_DIR = Path(__file__).parent.parent
-MODEL_PATH = BASE_DIR / "models" / "churn_model_render.pkl"
+MODEL_PATH = Path("/tmp/churn_model.pkl")
 model = None
 expected_features = []
 
